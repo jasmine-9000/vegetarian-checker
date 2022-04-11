@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <h1>Is it Vegetarian?</h1>
+    <form id="isVegetarian" name="isVegetarian">
+        <label for="UPC_barcode">Enter a UPC bar code number (12 digits)</label>
+        <input id="UPC_barcode"type="text">
+        <br>
+        <input id="submit" type="submit" value="Get value">
+    </form>
+    <h2 id='product-name'></h2>
+    <img id='product-img' src="#">
+    <table id="product-ingredients">
+        <tr>
+            <td>Ingredient</td>
+            <td>Vegetarian?</td>
+        </tr>
+    </table>
+    <div class="result"></div>
+    <ul>
+        <li>Progresso Traditional Beef & Vegetable Soup: 041196910759</li>
+        <li>Chicken tortilla soup dry soup mix: 011110038364
+        </li>
+        <li>Burger King Impossible Whopper (Non-Vegan):
+            2000000129221</li>
+    </ul>
+</body>
+<script src="./script.js"></script>
+</html>
