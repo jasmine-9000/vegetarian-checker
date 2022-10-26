@@ -1,6 +1,6 @@
 const soup1 = "011110038364";
-
-const baseURL = "https://world.openfoodfacts.org/api/v0/product/"
+let productImg, productName;
+const baseURL = "https://world.openfoodfacts.org/api/v0/product/" // URL
 window.onload = () => {
     console.log("Window loaded");
     const vegForm = document.getElementById("isVegetarian");
@@ -15,6 +15,11 @@ window.onload = () => {
        // );
         
     } )
+    productImg = document.getElementById('product-img')
+    productImg.classList.add('hidden');
+    productName = document.getElementById('product-name');
+    productName.classList.add('hidden');
+
 }
 
 async function retrieveBarcode(barcode)
@@ -51,8 +56,10 @@ class ProductInfo {
         this.image = productData.image_url;
     }
     showInfo() {
-        document.getElementById('product-img').src = this.image;
-        document.getElementById('product-name').innerText = this.name;
+        productImg.src = this.image;
+        productImg.classList.remove('hidden');
+        productName.innerText = this.name;
+        productName.classList.remove('hidden');
         this.showIngredients();
     }
     showIngredients() {

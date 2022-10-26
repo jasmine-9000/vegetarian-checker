@@ -30,3 +30,11 @@ td.non-veg-item {
 td.unknown-veg-item {
     background-color: yellow;
 }
+
+ul li {
+    list-style-type: none;
+}
+
+.hidden {
+    display:none;
+}
