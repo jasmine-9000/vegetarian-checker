@@ -13,8 +13,17 @@ h1, h2, h3 {
 }
 
 form {
-    display: flex;
     margin: 0 auto;
+}
+
+form input[type="submit"] {
+    background-color: #555;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 table {
@@ -24,6 +33,10 @@ table,th,td {
     background-color: white;
     border: 1px solid black;
 }
+td {
+    padding: 0.5rem 1rem;
+}
+
 td.non-veg-item {
     background-color: red;
 }
